@@ -1,0 +1,59 @@
+.card {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 1.5rem;
+    padding: 2rem;
+    max-width: 900px;
+    background: var(--card-bg);
+    border-radius: 32px;
+    box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.3);
+}
+
+.mode-selection {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 1rem;
+}
+
+.mode-text {
+    text-align: left;
+}
+
+.mode-buttons {
+    display: grid;
+    gap: 2rem;
+    grid-template-columns: repeat(auto-fit, minmax(50px, 1fr));
+}
+
+input {
+    padding: 1rem 0 1rem 2rem;
+    font-size: 1rem;
+}
+
+form {
+    display: grid;
+    gap: 2rem;
+    grid-template-columns: repeat(auto-fit, minmax(50px, 1fr));
+}
+
+.user-input button {
+    background-color: #a2e11a;
+}
+
+.solution-card {
+    display: flex;
+    flex-direction: column;
+    font-size: 1.2rem;
+    font-weight: bold;
+    border-radius: 8px;
+    background: var(--card-solution-bg);
+    color: black;
+    padding: 0 2rem;
+}
+
+.solution-card:hover {
+    box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.5);
+    transition: 0.2s ease;
+}

@@ -1,0 +1,65 @@
+:root {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+
+  font-family: Inter, sans-serif;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 1.5;
+  color: white;
+
+  --bg: #121212;
+  --button-bg-default: #FFD25A;
+  --button-bg-active: #ff1a8d;
+  --card-bg: #333333;
+  --card-solution-bg: #d7d7d7;
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 0 2rem;
+  background: var(--bg);
+}
+
+
+button {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: black;
+  font-weight: bold;
+  cursor: pointer;
+  background-color: var(--button-bg-default);
+  padding: 1rem 2rem;
+  border-radius: 5px;
+  border: none;
+}
+
+button.active {
+  background-color: var(--button-bg-active);
+}
+
+button:hover {
+  scale: 1.05;
+  opacity: 0.9;
+  transition: 0.2s ease-in-out;
+}
+
+button.active:hover {
+  scale: 1.05;
+  transition: 0.2s ease-in-out;
+}
+
+footer {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  align-items: flex-end;
+  height: 15rem;
+}
+
+
